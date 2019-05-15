@@ -16,7 +16,7 @@ class MainFrame(wx.Frame):
     def __init__(self, *args, **kwargs):
         super(MainFrame, self).__init__(*args, **kwargs)
 
-        notebook = wx.Notebook(self)
+        notebook = wx.Notebook(self,style=wx.BORDER_RAISED)
 
         account_form = AcountFormGUI(notebook)
         client_form = ClientFormGUI(notebook)
@@ -27,8 +27,3 @@ class MainFrame(wx.Frame):
         self.SetClientSize(notebook.GetBestSize())
 
 
-if __name__ == '__main__':
-    app = wx.App(0)
-    frame = MainFrame(None, title='CCH Property Management System')
-    frame.Show()
-    app.MainLoop()

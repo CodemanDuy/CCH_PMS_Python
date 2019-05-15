@@ -1,10 +1,13 @@
-# import os, sys
+import wx
+import os
+import sys
 
-# ROOT_DIR = os.getcwd()  # Get root directory
-# # Add absolute path to current sys.path
-# sys.path.append(os.path.dirname(ROOT_DIR + '\\CCHouseStudio_PMS\\'))
-# print("Root Directory:", ROOT_DIR)
+
+ROOT_DIR = os.getcwd()  # Get root directory
+sys.path.append(os.path.dirname(ROOT_DIR + r'/'))# Add absolute path to current sys.path
 # print('Path: ' + str(sys.path))
+
+from app_gui.main_gui import MainFrame
 
 """
 doc: Main base class
@@ -17,7 +20,10 @@ class Main():
     def mainProcess(self):
 
         try:
-           print()
+            app = wx.App(0)
+            frame = MainFrame(None, title='CCH Property Management System')
+            frame.Show()
+            app.MainLoop()
         except Exception as ex:
             print('Error: ', ex)
 
@@ -29,8 +35,7 @@ doc: Code will begin from here
 """
 if __name__ == '__main__':
     proc = Main()
-    proc.mainProcess()
-
+    proc.mainProcess()  
 
 
 ### BUILD APP

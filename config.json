@@ -3,8 +3,7 @@
     "configurations":[
         {
             "type": "project_info",            
-            "project_name": "CCHouseStudio_PMS",
-            "project_path": "E:\\Dev\\Python\\Source\\CCHouseStudio_PMS"
+            "project_name": "CCHouseStudio_PMS"
         },
         {                                
             "type": "db_connection",
@@ -29,7 +28,7 @@
             "env": "local",
             "db_name": "CCH_PMS",
             "db_file_extension": ".db",
-            "db_file_path": "/Users/duyle/Desktop/CodeSpace/Data",
+            "db_file_path": "/datacontext/datasources",
             "optional_connnectionstrings": ""        
         },
         {                                
@@ -42,7 +41,7 @@
             "env": "local",
             "db_name": "CCH_PMS",
             "db_file_extension": ".db",
-            "db_file_path": "",
+            "db_file_path": "/datacontext/datasources",
             "optional_connnectionstrings": ""        
         }
     ]

@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "C:\\Program Files (x86)\\Python37-32\\python.exe"
+    "python.pythonPath": "Z:\\Program Files (x86)\\Python\\Python 3.7.2\\python.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }

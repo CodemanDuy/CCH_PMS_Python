@@ -90,6 +90,9 @@ class ClientFormGUI(BaseFormGUI):
 
     def initLayout(self):
 
+        self.panel = wx.Panel(self, wx.ID_ANY)
+        self.panel.SetBackgroundColour(wx.Colour(48, 48, 48))
+
         # Container wrap all
         bxsMainContainer = wx.BoxSizer(orient=wx.HORIZONTAL)
 
@@ -211,7 +214,8 @@ class ClientFormGUI(BaseFormGUI):
         for control, options in [(bxsBodyTopContainer, dict(border=5, flag=wx.ALL)), (bxsBodyBottomContainer, dict(border=5, flag=wx.ALL))]:
             bxsMainContainer.Add(control, **options)
 
-        self.SetSizerAndFit(bxsMainContainer)
+        # self.SetSizerAndFit(bxsMainContainer)
+        self.panel.SetSizerAndFit(bxsMainContainer)
 
 
 
