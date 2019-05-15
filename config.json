@@ -1,0 +1,49 @@
+{
+    "version": "1.0",    
+    "configurations":[
+        {
+            "type": "project_info",            
+            "project_name": "CCHouseStudio_PMS",
+            "project_path": "E:\\Dev\\Python\\Source\\CCHouseStudio_PMS"
+        },
+        {                                
+            "type": "db_connection",
+            "dbms_type": "sqlite",
+            "dbms_tool": "db browser for sqlite",
+            "user": "",
+            "pwd": "",
+            "platform_os": "Window",             
+            "env": "local",
+            "db_name": "CCH_PMS",
+            "db_file_extension": ".db",
+            "db_file_path": "\\datacontext\\datasources",
+            "optional_connnectionstrings": ""        
+        },
+        {                                
+            "type": "db_connection",
+            "dbms_type": "sqlite",
+            "dbms_tool": "db browser for sqlite",
+            "user": "",
+            "pwd": "",
+            "platform_os": "OSX", 
+            "env": "local",
+            "db_name": "CCH_PMS",
+            "db_file_extension": ".db",
+            "db_file_path": "/Users/duyle/Desktop/CodeSpace/Data",
+            "optional_connnectionstrings": ""        
+        },
+        {                                
+            "type": "db_connection",
+            "dbms_type": "sqlite",
+            "dbms_tool": "db browser for sqlite",
+            "user": "",
+            "pwd": "",
+            "platform_os": "Linux",
+            "env": "local",
+            "db_name": "CCH_PMS",
+            "db_file_extension": ".db",
+            "db_file_path": "",
+            "optional_connnectionstrings": ""        
+        }
+    ]
+}
